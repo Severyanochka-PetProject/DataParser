@@ -24,7 +24,7 @@ for product in products_list:
         "name": product_name,
         "description": "",
         "price": float(product_price),
-        "url": "https://storage.yandexcloud.net/severyanochka-fs/products/" + product_img.split('/')[-1],
+        "url": "https://storage.yandexcloud.net/severyanochka-fs/products/" + product_img.split('/')[-1].split('.')[0],
         "id_brand": random.randint(1, 10),
         "id_manufacture": random.randint(1, 7),
         "id_category": 6,
